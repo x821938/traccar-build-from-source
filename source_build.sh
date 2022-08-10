@@ -22,6 +22,7 @@ if test -f "/src/traccar_version"; then
 	# Create Installer
 	cd /src/traccar/setup
 	cp /src/java/OpenJDK17U-jdk_x64_linux_hotspot_17.0.4_8.tar.gz .
+	cp /src/java/jdk-11.0.15-ojdkbuild-linux-x64.zip .
 	./package.sh $TRACCAR_VERSION linux-64
 
 	# Save it in output built dir
